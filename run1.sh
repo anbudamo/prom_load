@@ -19,8 +19,9 @@ source ~/.bashrc
 echo "Installing Avalanche..."
 go install github.com/prometheus-community/avalanche/cmd/avalanche@latest
 echo "Configuring Prometheus..."
-cat config > /etc/prometheus/prometheus.yml
-cat rules > /etc/prometheus/recording_rules.yml
+sudo sh -c 'cat config > /etc/prometheus/prometheus.yml'
+sudo sh -c 'cat rules > /etc/prometheus/recording_rules.yml'
+sudo sh -c 'cat default > /etc/default/prometheus'
 
 echo "Starting Prometheus..."
 sudo systemctl start prometheus
