@@ -33,6 +33,7 @@ echo "Starting Avalanche..."
 /users/adamodar/go/bin/avalanche \
   --counter-metric-count=200 \
   --series-count="$SERIES_COUNT" \
+  --gauge-metric-count=0 \
   --label-count=3 \
   --value-interval=300 \
   --series-interval=0 \
