@@ -25,7 +25,7 @@ sudo sh -c 'cat default > /etc/default/prometheus'
 
 echo "Starting Prometheus..."
 sudo systemctl start prometheus
-echo "Starting Grafana
+echo "Starting Grafana"
 sudo systemctl daemon-reload
 sudo systemctl enable grafana-server
 sudo systemctl start grafana-server
